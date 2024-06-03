@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdll.a  CMakeFiles/dll.dir/double-linked-list.hpp.o
+/usr/bin/ranlib libdll.a

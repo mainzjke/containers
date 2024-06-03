@@ -1,0 +1,7 @@
+add_subdirectory(allocator)
+add_subdirectory(queue)
+add_subdirectory(stack)
+add_subdirectory(vector)
+add_subdirectory(double-linked-list)
+add_subdirectory(forward-list)
+add_subdirectory(test)
