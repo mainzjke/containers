@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/test.e.dir/main.cpp.o  -o ../../../bin/test.e  -Wl,-rpath,/home/mainz/development/libraries/lib ../../../lib/libvector.so ../../../lib/libforward-list.so ../../../lib/liballocator.so 
