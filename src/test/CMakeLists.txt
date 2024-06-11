@@ -4,5 +4,5 @@ file (GLOB_RECURSE test-sources ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp
 
 add_executable(${TARGET} ${test-sources})
 target_include_directories(${TARGET} PRIVATE ${PROJECT_SOURCE_DIR}/include)
-target_link_libraries(${TARGET} vector forward-list)
+target_link_libraries(${TARGET} vector forward-list double-linked-list)
 
