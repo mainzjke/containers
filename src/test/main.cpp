@@ -19,4 +19,5 @@ int main(){
     --iter;
     --iter;
     std::cout << *iter << std::endl;
+    return 1;
 }
