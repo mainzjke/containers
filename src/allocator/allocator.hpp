@@ -1,5 +1,4 @@
-#ifndef ALLOCATOR_HPP
-#define ALLOCATOR_HPP
+#pragma once
 
 #include <iostream>
 #include <memory>
@@ -33,4 +32,3 @@ struct Allocator{
 
 } //! <--- end namespace sml
 
-#endif // ALLOCATOR_HPP

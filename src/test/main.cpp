@@ -1,26 +1,23 @@
 #include <iostream>
 #include <forward-list.hpp>
-#include <forward_list>
+#include <list>
+#include <double-linked-list.hpp>
+#include <vector>
 
 int main(){
-    sml::forward_list<int> list;
-    list.push_front(100);
-    list.push_front(120);
-    list.push_front(110);
-
-    for (auto it = list.begin(); it != list.end(); ++it){
-        std::cout << *(it) << std::endl;
-    }
-    list.pop_front();
-    std::cout << std::endl;
-    for (auto it = list.begin(); it != list.end(); ++it){
-        std::cout << *(it) << std::endl;
+    sml::list<int> list;
+    for (int i = 0; i < 5; ++i){
+        list.push_back(i);
     }
 
-    auto iter = list.begin();
-    std::cout << std::endl;
-    list.insert_after(iter, 150);
-    for (auto it = list.begin(); it != list.end(); ++it){
-        std::cout << *(it) << std::endl;
+    auto it = list.begin();
+    for (int i = 0 ; i < 100; ++i){
+        std::cout << *it << std::endl;
+        ++it;
     }
+    auto iter = list.end();
+    --iter;
+    --iter;
+    std::cout << *iter << std::endl;
+    return 1;
 }

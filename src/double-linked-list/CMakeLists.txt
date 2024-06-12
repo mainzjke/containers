@@ -1,11 +1,8 @@
-set(TARGET dll)
-file (GLOB_RECURSE library-sources ${CMAKE_CURRENT_SOURCE_DIR}/*.hpp)
+set(TARGET double-linked-list)
+set_source_files_properties(double-linked-list.hpp PROPERTIES LANGUAGE CXX HEADER_FILE_ONLY TRUE)
 
-foreach(source_file IN LISTS library-sources)
-    set_source_files_properties(${source_file} PROPERTIES LANGUAGE CXX)
-endforeach()
-
-add_library(${TARGET} ${library-sources})
-target_include_directories(${TARGET} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+add_library(${TARGET} SHARED double-linked-list.hpp)
+target_include_directories(${TARGET} PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${TARGET} allocator)
 
 
